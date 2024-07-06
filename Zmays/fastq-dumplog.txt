@@ -1,0 +1,99 @@
+Rejected 9673572 READS because of filtering out non-biological READS
+Read 9673572 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-cold-24h/b1-Maize-cold-24h.sra
+Written 9673572 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-cold-24h/b1-Maize-cold-24h.sra
+Rejected 8965686 READS because of filtering out non-biological READS
+Read 8965686 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-cold-3h/b1-Maize-cold-3h.sra
+Written 8965686 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-cold-3h/b1-Maize-cold-3h.sra
+Rejected 10232539 READS because of filtering out non-biological READS
+Read 10232539 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-cold-6h/b1-Maize-cold-6h.sra
+Written 10232539 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-cold-6h/b1-Maize-cold-6h.sra
+Rejected 9373481 READS because of filtering out non-biological READS
+Read 9373481 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-05h/b1-Maize-control-05h.sra
+Written 9373481 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-05h/b1-Maize-control-05h.sra
+Rejected 10986705 READS because of filtering out non-biological READS
+Read 10986705 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-16h/b1-Maize-control-16h.sra
+Written 10986705 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-16h/b1-Maize-control-16h.sra
+Rejected 10129856 READS because of filtering out non-biological READS
+Read 10129856 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-1h/b1-Maize-control-1h.sra
+Written 10129856 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-1h/b1-Maize-control-1h.sra
+Rejected 10225488 READS because of filtering out non-biological READS
+Read 10225488 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-24h/b1-Maize-control-24h.sra
+Written 10225488 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-24h/b1-Maize-control-24h.sra
+Rejected 9829134 READS because of filtering out non-biological READS
+Read 9829134 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-3h/b1-Maize-control-3h.sra
+Written 9829134 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-3h/b1-Maize-control-3h.sra
+Rejected 9539956 READS because of filtering out non-biological READS
+Read 9539956 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-6h/b1-Maize-control-6h.sra
+Written 9539956 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b1-Maize-control-6h/b1-Maize-control-6h.sra
+Rejected 18440334 READS because of filtering out non-biological READS
+Read 18440334 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-05/b2-Maize-cold-05.sra
+Written 18440334 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-05/b2-Maize-cold-05.sra
+Rejected 22519599 READS because of filtering out non-biological READS
+Read 22519599 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-16h/b2-Maize-cold-16h.sra
+Written 22519599 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-16h/b2-Maize-cold-16h.sra
+Rejected 22315723 READS because of filtering out non-biological READS
+Read 22315723 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-1h/b2-Maize-cold-1h.sra
+Written 22315723 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-1h/b2-Maize-cold-1h.sra
+Rejected 25817626 READS because of filtering out non-biological READS
+Read 25817626 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-24h/b2-Maize-cold-24h.sra
+Written 25817626 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-24h/b2-Maize-cold-24h.sra
+Rejected 23949860 READS because of filtering out non-biological READS
+Read 23949860 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-3h/b2-Maize-cold-3h.sra
+Written 23949860 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-3h/b2-Maize-cold-3h.sra
+Rejected 19744895 READS because of filtering out non-biological READS
+Read 19744895 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-6h/b2-Maize-cold-6h.sra
+Written 19744895 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-6h/b2-Maize-cold-6h.sra
+Rejected 21567077 READS because of filtering out non-biological READS
+Read 21567077 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-05h/b2-Maize-control-05h.sra
+Written 21567077 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-05h/b2-Maize-control-05h.sra
+Rejected 18990371 READS because of filtering out non-biological READS
+Read 18990371 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-16h/b2-Maize-control-16h.sra
+Written 18990371 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-16h/b2-Maize-control-16h.sra
+Rejected 17055906 READS because of filtering out non-biological READS
+Read 17055906 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-1h/b2-Maize-control-1h.sra
+Written 17055906 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-1h/b2-Maize-control-1h.sra
+Rejected 24384357 READS because of filtering out non-biological READS
+Read 24384357 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-24h/b2-Maize-control-24h.sra
+Written 24384357 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-24h/b2-Maize-control-24h.sra
+Rejected 29139832 READS because of filtering out non-biological READS
+Read 29139832 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-3h/b2-Maize-control-3h.sra
+Written 29139832 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-3h/b2-Maize-control-3h.sra
+Rejected 21060963 READS because of filtering out non-biological READS
+Read 21060963 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-6h/b2-Maize-control-6h.sra
+Written 21060963 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-control-6h/b2-Maize-control-6h.sra
+Rejected 25467565 READS because of filtering out non-biological READS
+Read 25467565 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-05h/b3-Maize-cold-05h.sra
+Written 25467565 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-05h/b3-Maize-cold-05h.sra
+Rejected 20447278 READS because of filtering out non-biological READS
+Read 20447278 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-16h/b3-Maize-cold-16h.sra
+Written 20447278 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-16h/b3-Maize-cold-16h.sra
+Rejected 19414082 READS because of filtering out non-biological READS
+Read 19414082 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-1h/b3-Maize-cold-1h.sra
+Written 19414082 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-1h/b3-Maize-cold-1h.sra
+Rejected 23678889 READS because of filtering out non-biological READS
+Read 23678889 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-24h/b3-Maize-cold-24h.sra
+Written 23678889 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-24h/b3-Maize-cold-24h.sra
+Rejected 19664834 READS because of filtering out non-biological READS
+Read 19664834 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-3h/b3-Maize-cold-3h.sra
+Written 19664834 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-3h/b3-Maize-cold-3h.sra
+Rejected 22850888 READS because of filtering out non-biological READS
+Read 22850888 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-6h/b3-Maize-cold-6h.sra
+Written 22850888 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-cold-6h/b3-Maize-cold-6h.sra
+Rejected 20143202 READS because of filtering out non-biological READS
+Read 20143202 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-05h/b3-Maize-control-05h.sra
+Written 20143202 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-05h/b3-Maize-control-05h.sra
+Rejected 18201478 READS because of filtering out non-biological READS
+Read 18201478 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-16h/b3-Maize-control-16h.sra
+Written 18201478 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-16h/b3-Maize-control-16h.sra
+Rejected 18941031 READS because of filtering out non-biological READS
+Read 18941031 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-1h/b3-Maize-control-1h.sra
+Written 18941031 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-1h/b3-Maize-control-1h.sra
+Rejected 25529182 READS because of filtering out non-biological READS
+Read 25529182 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-24h/b3-Maize-control-24h.sra
+Written 25529182 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-24h/b3-Maize-control-24h.sra
+Rejected 22723979 READS because of filtering out non-biological READS
+Read 22723979 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-3h/b3-Maize-control-3h.sra
+Written 22723979 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-3h/b3-Maize-control-3h.sra
+Rejected 23238727 READS because of filtering out non-biological READS
+Read 23238727 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-6h/b3-Maize-control-6h.sra
+Written 23238727 spots for /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b3-Maize-control-6h/b3-Maize-control-6h.sra
