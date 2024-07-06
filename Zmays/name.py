@@ -139,7 +139,13 @@ dowmload_path = '/Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/'
 #             subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
 
 # 过滤
+# TrimGalore命令的路径
+trim_galore="/Data4/gly_wkdir/bin/TrimGalore-0.6.10/trim_galore"
 for key in SRR_and_name:
     if 'Maize' in SRR_and_name[key]:
-        cmd = f
+        cmd = f'conda run -n cutadapt {trim_galore} --cores 8 -q 20 --illumina --fastqc --output_dir {dowmload_path}{SRR_and_name[key]}/ {dowmload_path}{SRR_and_name[key]}/{SRR_and_name[key]}.fastq'
+        print(cmd)
+        with open(dowmload_path+'TrimGalorelog.txt', 'a') as log_file:
+            subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
+
 

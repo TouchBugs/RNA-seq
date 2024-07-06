@@ -1,0 +1,132 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-3h/b2-Maize-cold-3h.fastq
+Trimming mode: single-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.6
+Python version: 3.8.18
+Number of cores used for trimming: 8
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; user defined)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length before a sequence gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+
+
+This is cutadapt 4.6 with Python 3.8.18
+Command line parameters: -j 8 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-3h/b2-Maize-cold-3h.fastq
+Processing single-end reads on 8 cores ...
+Finished in 26.470 s (1.105 µs/read; 54.29 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              23,949,860
+Reads with adapters:                 7,288,853 (30.4%)
+Reads written (passing filters):    23,949,860 (100.0%)
+
+Total basepairs processed: 1,820,189,360 bp
+Quality-trimmed:               1,134,883 bp (0.1%)
+Total written (filtered):  1,808,396,351 bp (99.4%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGC; Type: regular 3'; Length: 13; Trimmed: 7288853 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-13 bp: 1
+
+Bases preceding removed adapters:
+  A: 25.6%
+  C: 33.4%
+  G: 24.9%
+  T: 16.0%
+  none/other: 0.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	5217388	5987465.0	0	5217388
+2	1547787	1496866.2	0	1547787
+3	390528	374216.6	0	390528
+4	91225	93554.1	0	91225
+5	23996	23388.5	0	23996
+6	4561	5847.1	0	4561
+7	1111	1461.8	0	1111
+8	544	365.4	0	544
+9	594	91.4	0	251 343
+10	888	22.8	1	176 712
+11	417	5.7	1	106 311
+12	208	1.4	1	119 89
+13	131	0.4	1	92 39
+14	110	0.4	1	88 22
+15	74	0.4	1	58 16
+16	63	0.4	1	51 12
+17	82	0.4	1	58 24
+18	59	0.4	1	44 15
+19	81	0.4	1	48 33
+20	58	0.4	1	34 24
+21	59	0.4	1	38 21
+22	63	0.4	1	34 29
+23	45	0.4	1	32 13
+24	52	0.4	1	32 20
+25	50	0.4	1	25 25
+26	39	0.4	1	25 14
+27	36	0.4	1	19 17
+28	36	0.4	1	25 11
+29	54	0.4	1	21 33
+30	42	0.4	1	23 19
+31	41	0.4	1	24 17
+32	35	0.4	1	24 11
+33	36	0.4	1	22 14
+34	39	0.4	1	14 25
+35	46	0.4	1	25 21
+36	47	0.4	1	26 21
+37	30	0.4	1	12 18
+38	33	0.4	1	20 13
+39	26	0.4	1	15 11
+40	35	0.4	1	16 19
+41	42	0.4	1	31 11
+42	29	0.4	1	10 19
+43	33	0.4	1	12 21
+44	31	0.4	1	12 19
+45	22	0.4	1	7 15
+46	27	0.4	1	16 11
+47	29	0.4	1	15 14
+48	18	0.4	1	11 7
+49	61	0.4	1	12 49
+50	47	0.4	1	16 31
+51	31	0.4	1	10 21
+52	43	0.4	1	15 28
+53	32	0.4	1	20 12
+54	25	0.4	1	5 20
+55	27	0.4	1	9 18
+56	28	0.4	1	10 18
+57	36	0.4	1	5 31
+58	19	0.4	1	10 9
+59	13	0.4	1	9 4
+60	31	0.4	1	6 25
+61	30	0.4	1	6 24
+62	22	0.4	1	4 18
+63	12	0.4	1	3 9
+64	25	0.4	1	8 17
+65	14	0.4	1	3 11
+66	11	0.4	1	1 10
+67	40	0.4	1	11 29
+68	9	0.4	1	3 6
+69	17	0.4	1	2 15
+70	26	0.4	1	0 26
+71	39	0.4	1	6 33
+72	75	0.4	1	2 73
+73	423	0.4	1	2 421
+74	898	0.4	1	1 897
+75	1536	0.4	1	1 1535
+76	4303	0.4	1	2 4301
+
+RUN STATISTICS FOR INPUT FILE: /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/b2-Maize-cold-3h/b2-Maize-cold-3h.fastq
+=============================================
+23949860 sequences processed in total
+Sequences removed because they became shorter than the length cutoff of 20 bp:	7771 (0.0%)
+
