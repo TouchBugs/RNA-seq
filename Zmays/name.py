@@ -1,3 +1,4 @@
+import os
 import subprocess
 
 SRR_and_name = {
@@ -140,12 +141,32 @@ dowmload_path = '/Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/'
 
 # 过滤
 # TrimGalore命令的路径
-trim_galore="/Data4/gly_wkdir/bin/TrimGalore-0.6.10/trim_galore"
-for key in SRR_and_name:
-    if 'Maize' in SRR_and_name[key]:
-        cmd = f'conda run -n cutadapt {trim_galore} --cores 8 -q 20 --illumina --fastqc --output_dir {dowmload_path}{SRR_and_name[key]}/ {dowmload_path}{SRR_and_name[key]}/{SRR_and_name[key]}.fastq'
-        print(cmd)
-        with open(dowmload_path+'TrimGalorelog.txt', 'a') as log_file:
-            subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
+# trim_galore="/Data4/gly_wkdir/bin/TrimGalore-0.6.10/trim_galore"
+# for key in SRR_and_name:
+#     if 'Maize' in SRR_and_name[key]:
+#         cmd = f'conda run -n cutadapt {trim_galore} --cores 8 -q 20 --illumina --fastqc --output_dir {dowmload_path}{SRR_and_name[key]}/ {dowmload_path}{SRR_and_name[key]}/{SRR_and_name[key]}.fastq'
+#         print(cmd)
+#         with open(dowmload_path+'TrimGalorelog.txt', 'a') as log_file:
+#             subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
+
+# hisat2建库
+# 获取/Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/reference/Zm下的文件列表
+reference_path = '/Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/reference/Zm/'
+# reference_files = os.listdir(reference_path)
+# for file in reference_files:
+#     if file.startswith('Zm') and file.endswith('.fa'):
+#         reference_fa = file
+#         cmd = f'hisat2-build -p 8 {reference_path}{reference_fa} {reference_path}Zm_index'
+#         print(cmd)
+#         with open(reference_path+'hisat2-buildlog.txt', 'a') as log_file:
+#             subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
+
+# hisat2比对
+# for key in SRR_and_name:
+#     if 'Maize' in SRR_and_name[key]:
+#         cmd = f'hisat2 -p 8 -x {reference_path}Zm_index -U {dowmload_path}{SRR_and_name[key]}/{SRR_and_name[key]}_trimmed.fq | samtools view -bS - | samtools sort -@ 8 -o {dowmload_path}{SRR_and_name[key]}/{SRR_and_name[key]}_sorted.bam'
+#         print(cmd)
+#         with open(dowmload_path+'hisat2log.txt', 'a') as log_file:
+#             subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
 
 
