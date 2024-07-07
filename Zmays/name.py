@@ -170,3 +170,15 @@ reference_path = '/Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/reference
 #             subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
 
 
+# 使用cufflinks计算FPKM
+FPKM_path = '/Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/FPKM/'
+for key in SRR_and_name:
+    if 'Maize' in SRR_and_name[key]:
+        cmd = f'mkdir -p {FPKM_path}{SRR_and_name[key]}'
+        print(cmd)
+        subprocess.run(cmd, shell=True)
+        cmd = f'cufflinks -q -p 8 -G /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/reference/Zm/Zm-B73-REFERENCE-NAM-5.0_Zm00001eb.1.gff3 -o {FPKM_path}{SRR_and_name[key]}/ {dowmload_path}{SRR_and_name[key]}/{SRR_and_name[key]}_sorted.bam'
+        print(cmd)
+        with open(dowmload_path+'cufflinkslog.txt', 'a') as log_file:
+            subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
+
