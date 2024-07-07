@@ -172,13 +172,39 @@ reference_path = '/Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/reference
 
 # 使用cufflinks计算FPKM
 FPKM_path = '/Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/FPKM/'
+# for key in SRR_and_name:
+#     if 'Maize' in SRR_and_name[key]:
+#         cmd = f'mkdir -p {FPKM_path}{SRR_and_name[key]}'
+#         print(cmd)
+#         subprocess.run(cmd, shell=True)
+#         cmd = f'cufflinks -q -p 8 -G /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/reference/Zm/Zm-B73-REFERENCE-NAM-5.0_Zm00001eb.1.gff3 -o {FPKM_path}{SRR_and_name[key]}/ {dowmload_path}{SRR_and_name[key]}/{SRR_and_name[key]}_sorted.bam'
+#         print(cmd)
+#         with open(dowmload_path+'cufflinkslog.txt', 'a') as log_file:
+#             subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
+
+# 合并FPKM并计算FPKM的均值
+FPKMs = {}
+n = 0
 for key in SRR_and_name:
     if 'Maize' in SRR_and_name[key]:
-        cmd = f'mkdir -p {FPKM_path}{SRR_and_name[key]}'
-        print(cmd)
-        subprocess.run(cmd, shell=True)
-        cmd = f'cufflinks -q -p 8 -G /Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/reference/Zm/Zm-B73-REFERENCE-NAM-5.0_Zm00001eb.1.gff3 -o {FPKM_path}{SRR_and_name[key]}/ {dowmload_path}{SRR_and_name[key]}/{SRR_and_name[key]}_sorted.bam'
-        print(cmd)
-        with open(dowmload_path+'cufflinkslog.txt', 'a') as log_file:
-            subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
-
+        n += 1
+        with open(f'{FPKM_path}{SRR_and_name[key]}/genes.fpkm_tracking', 'r') as f:
+            next(f)  # 直接跳过第一行
+            for line in f:
+                parts = line.split('\t')
+                gene_id = parts[0]
+                try:
+                    FPKM = float(parts[9])
+                except ValueError:
+                    # 处理非数字的FPKM值
+                    continue
+                # print(f'{FPKM_path}{SRR_and_name[key]}/genes.fpkm_tracking\n',gene_id, FPKM)  # 调试用
+                FPKMs[gene_id] = FPKMs.get(gene_id, 0) + FPKM
+# 计算FPKM的均值
+for gene_id in FPKMs:
+    FPKMs[gene_id] = FPKMs[gene_id] / n
+# 将FPKM的均值≥1的基因id及其FPKM值写入文件
+with open(dowmload_path+'expressed_genes.txt', 'w') as f:
+    for gene_id in FPKMs:
+        if FPKMs[gene_id] >= 1:
+            f.write(f'{gene_id},{FPKMs[gene_id]}\n')
