@@ -50,7 +50,7 @@ SRR_and_name = {
     'SRR4301641'	:	'b2-FoxtailMillet-control-24h'	,
     'SRR4301642'	:	'b2-FoxtailMillet-control-3h'	,
     'SRR4301643'	:	'b2-FoxtailMillet-control-6h'	,
-    'SRR4301644'	:	'b2-Maize-cold-05'	,
+    'SRR4301644'	:	'b2-Maize-cold-05h'	,
     'SRR4301645'	:	'b2-Maize-cold-16h'	,
     'SRR4301647'	:	'b2-Maize-cold-1h'	,
     'SRR4301648'	:	'b2-Maize-cold-24h'	,
@@ -213,10 +213,49 @@ FPKM_path = '/Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/FPKM/'
 # 使用htseq-count计算基因表达量
 # 注意 gene -i ID 或者是 gene_id 这取决于gff文件中的gene的id是什么
 counts_dir = '/Data4/gly_wkdir/coldgenepredict/raw_sec/Arabidopsis/Zmays/counts/'
-subprocess.run(f'mkdir -p {counts_dir}', shell=True)
-for key in SRR_and_name:
-    if 'Maize' in SRR_and_name[key]:
-        cmd = f'conda run -n base htseq-count -f bam -r pos -s no -t gene -i ID {dowmload_path}{SRR_and_name[key]}/{SRR_and_name[key]}_sorted.bam {reference_path}Zm-B73-REFERENCE-NAM-5.0_Zm00001eb.1.gff3 > {counts_dir}{SRR_and_name[key]}_count.txt'
-        print(cmd)
-        with open(dowmload_path+'htseq-countlog.txt', 'a') as log_file:
-            subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
+# subprocess.run(f'mkdir -p {counts_dir}', shell=True)
+# for key in SRR_and_name:
+#     if 'Maize' in SRR_and_name[key]:
+#         cmd = f'conda run -n base htseq-count -f bam -r pos -s no -t gene -i ID {dowmload_path}{SRR_and_name[key]}/{SRR_and_name[key]}_sorted.bam {reference_path}Zm-B73-REFERENCE-NAM-5.0_Zm00001eb.1.gff3 > {counts_dir}{SRR_and_name[key]}_count.txt'
+#         print(cmd)
+#         with open(dowmload_path+'htseq-countlog.txt', 'a') as log_file:
+#             subprocess.run(cmd, shell=True, stdout=log_file, stderr=log_file)
+
+# 把counts文件按照GeneID合并, 变成如下格式：GeneID,SRR_and_name[key1],SRR_and_name[key2]...
+count_files = os.listdir(counts_dir)
+gene_counts = {}
+for count_file in count_files:
+    with open(counts_dir+count_file, 'r') as f:
+        for line in f:
+            if line == '\n':
+                continue
+            parts = line.split('\t')
+            gene_id = parts[0]
+            count = int(parts[1])
+            gene_counts[gene_id] = gene_counts.get(gene_id, {})
+            gene_counts[gene_id][count_file] = count
+# 把gene_counts写入文件
+with open(dowmload_path+'gene_counts.txt', 'w') as f:
+    f.write('GeneID')
+    for count_file in count_files:
+        count_file = count_file.replace('_count.txt', '').replace('-', '_')
+        f.write(','+count_file)
+    f.write('\n')
+    for gene_id in gene_counts:
+        f.write(gene_id)
+        for count_file in count_files:
+            f.write(','+str(gene_counts[gene_id].get(count_file, 0)))
+        f.write('\n')
+# 创建对应的计数矩阵（Count Matrix）:
+# Sample,Condition,Time,Group,Batch
+# b1-Maize-cold-05h_count.txt,Cold,05h,Cold-05h,b1
+with open(dowmload_path+'count_matrix.txt', 'w') as f:
+    f.write('Sample,Condition,Time,Group,Batch\n')
+    for count_file in count_files:
+        parts = count_file.split('-')
+        batch = parts[0]
+        condition = parts[2]
+        time = parts[3].split('_')[0]
+        group = condition+'-'+time
+        count_file = count_file.replace('_count.txt', '').replace('-', '_')
+        f.write(f'{count_file},{condition},{time},{group},{batch}\n')
